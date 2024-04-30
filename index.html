@@ -7,7 +7,9 @@
 	<script>
 	function turnONTHELIGHTS() {
 		document.getElementById("turnONTHELIGHTS").classList.add("active");
-		$("#turnONTHELIGHTS").hide;
+		    setTimeout(function () {
+		        document.getElementById("turnONTHELIGHTS").remove();
+		    }, 2000);
 	}
 	</script> 
 </head>
