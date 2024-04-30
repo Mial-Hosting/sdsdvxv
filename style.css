@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+hr {
+	border: 1px solid #ff9d00;
+	border-radius: 1px;
+	margin: auto;
+	width: 200px;
+	margin-bottom: 20px;
+	margin-top: 8px;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center; 
+	color:white;
+}
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	color:#1c1c1c;
+	
+}
+
+p {
+	font-size:25px;
+}
+
+.img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 10px;
+}
+
+.img_01 {
+	background-image: url("http://localhost:9898/Local/lights-on/AdobeStock_481954878.jpeg");
+}
+
+.img_02 {
+	background-image: url("http://localhost:9898/Local/lights-on/AdobeStock_410620092.jpeg");
+}
+
+.img_03 {
+	background-image: url("http://localhost:9898/Local/lights-on/AdobeStock_373593182.jpeg");
+}
+
+.img_04 {
+	background-image: url("http://localhost:9898/Local/lights-on/AdobeStock_288632788.jpeg");
+}
+
+.section {
+	margin: auto;
+	padding 20px;
+	max-width: 1000px;
+	padding-bottom: 70px;
+}
+
+.topper {
+	padding: 100px;
+	margin-bottom: 40px;
+	background-color: #ff9d00;
+}
+
+.lightson {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+  -webkit-user-select: none; /* Safari */
+  user-select: none;	
+	opacity: 1;
+	transition: 4s opacity;
+}
+
+.lightson div {
+	text-align:center;
+	padding:30px;
+	border-radius: 10px;
+	background: #1c1c1c;
+
+}
+
+.lightson i {
+	font-size: 40px;
+}
+
+.lightson.active {
+	opacity: 0;
+}
+
+.sided {
+	display: flex;
+}
+
+.sided_content {
+	width: 100%;
+	padding: 20px;
+}
+
+.sided_img {
+	width: 100%;
+}
+
+.itemt {
+	margin-left:20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+}
+
+.itemt.t2 {
+	border-left: 6px solid #ff9d00;
+}
+
+.itemt.t1 {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.itemt.t1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%; /* Höhe des Gradientenbereichs */
+  width: 6px; /* Breite des Gradienten */
+  z-index: -1; /* Damit das Pseudoelement unter dem Inhalt liegt */
+  left: 0px;
+background: linear-gradient(180deg, #2AAA8A 34%, #ff9d00 35%);
+}
+
+.itemt h1 {
+	color:black;
+	text-align:left;
+}
+
+.tcontent {
+	margin-left: 20px;
+	margin-top:10px;
+}
